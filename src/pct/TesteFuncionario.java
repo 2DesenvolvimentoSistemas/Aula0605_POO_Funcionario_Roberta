@@ -18,7 +18,7 @@ public class TesteFuncionario {
         Funcionario f = new Funcionario();
         
         //criacao do objeto
-        f.numMatricula=10;
+        f.numMatricula=33;
         f.nome="Roberta";
         f.nivel='P';
         f.salario=3500.00;
