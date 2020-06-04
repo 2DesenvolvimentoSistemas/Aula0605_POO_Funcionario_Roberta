@@ -18,11 +18,16 @@ public class TesteFuncionario {
         Funcionario f = new Funcionario();
         
         //criacao do objeto
-        f.numMatricula=33;
-        f.nome="Roberta";
-        f.nivel='P';
-        f.salario=3500.00;
-        f.afastado=false;
+        //f.numMatricula= (33);
+        f.setNumMatricula(33);
+        //f.nome="Roberta";
+        f.setNome("Roberta");
+        //f.nivel='P';
+        f.setNivel('P');
+        //f.salario=3500.00;
+        f.setSalario(3500.00);
+        //f.afastado=false;
+        f.setAfastado(false);
         
         //testando o metodo imprimirDados
             System.out.println("\n\t\t\t CLASSE FUNCIONÁRIO \n");
@@ -35,6 +40,12 @@ public class TesteFuncionario {
             System.out.println("\n\t\t\t DESCONTO INSS \n");
             f.imprimirDados();
         
+            //outroFuncionario - criacao instancia e construcao do outro funcionario
+            Funcionario outroFuncionario = new Funcionario(21, "Mônica", 'S', 4700.00, false);
+            
+            //imprimindo outroFuncionario
+            System.out.println("\n\t\t\t OUTRO FUNCIONÁRIO \n");
+            outroFuncionario.imprimirDados();
         
     }
     
