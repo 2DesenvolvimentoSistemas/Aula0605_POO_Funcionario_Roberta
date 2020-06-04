@@ -10,13 +10,25 @@ package pct;
  * @author ROBERTA
  */
 public class Funcionario {
+
+    public Funcionario(int numMatricula, String nome, char nivel, double salario, boolean afastado) {
+        this.numMatricula = numMatricula;
+        this.nome = nome;
+        this.nivel = nivel;
+        this.salario = salario;
+        this.afastado = afastado;
+    }
+
+    public Funcionario() {
+    }
+    
     
            //atributos da classe Funcionario
-    int numMatricula;
-    String nome;
-    char nivel; // T | J | P | S
-    double salario;
-    boolean afastado;
+    private int numMatricula;
+    private String nome;
+    private char nivel; // T | J | P | S
+    private double salario;
+    private boolean afastado;
     
     public void imprimirDados (){
         
@@ -36,5 +48,45 @@ public class Funcionario {
 
     
 }
+
+    public int getNumMatricula() {
+        return numMatricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public char getNivel() {
+        return nivel;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public boolean isAfastado() {
+        return afastado;
+    }
+
+    public void setNumMatricula(int numMatricula) {
+        this.numMatricula = numMatricula;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setNivel(char nivel) {
+        this.nivel = nivel;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public void setAfastado(boolean afastado) {
+        this.afastado = afastado;
+    }
     
 }
